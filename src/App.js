@@ -1,20 +1,30 @@
-import React from 'react';
-import './App.css';
-import {  Routes, Route } from 'react-router-dom';
-import Login from './pages/Login';
-import Dashboard from './pages/Dashboard';
-import OrderForm from './pages/OrderForm';
-import Homepage from './pages/Homepage';
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import Login from "./pages/Login";
+import AdminDashboard from "./pages/AdminDashboard";
+import CustomerDashboard from "./pages/CustomerDashboard";
+import EmployeeDashboard from "./pages/EmployeeDashboard";
+import Menu from "./pages/Menu";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+//import AboutUs from "./components/AboutUs";
+import AllAboutUs from "./pages/AllAboutUs";
 
 function App() {
   return (
     <Routes>
-      <Route path= "/" element={<Login />}/>
-      <Route path= "/login" element={<Login />}/>
-      <Route path= "/order" element={<OrderForm />} />
-      <Route path= "/home" element={<Homepage />}/>
-      <Route path= "/dashboard" element={<Dashboard />}/>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/Login" element={<Login />} />
+      <Route path="/menu" element={<Menu />} />
+      <Route path="/about" element={<AllAboutUs />} />
+      
 
+      {/* <Route path= "/order" element={<AdminDashboard />} />
+      <Route path= "/home" element={<CustomerDashboard />}/>
+      <Route path= "/dashboard" element={<EmployeeDashboard />} 
+      */}
     </Routes>
   );
 }
