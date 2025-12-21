@@ -9,7 +9,7 @@ function Navbar() {
         <li>
 <Link to="/" onClick={() => window.scrollTo(0, 0)}>Home</Link>        </li>
         <li>
-          <Link to="/menu" className="hover:text-yellow-300">Menu</Link>
+          <Link to="/GuestMenu" className="hover:text-yellow-300">Menu</Link>
         </li>
         <li>
           <Link to="/about" className="hover:text-yellow-300">About Us</Link>
@@ -18,8 +18,11 @@ function Navbar() {
           <Link to="/login" className="hover:text-yellow-300">Sign up</Link>
         </li>
       </ul>
+    
     </nav>
 
+   
+    
 
     );
 }

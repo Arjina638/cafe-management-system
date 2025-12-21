@@ -35,7 +35,7 @@ function Login() {
       } else if (foundUser.role === "employee") {
         navigate("/employee-dashboard");
       } else {
-        navigate("/customer-home");
+        navigate("/Customer/Dashboard");
       }
     } else {
       setError("Invalid email or password");

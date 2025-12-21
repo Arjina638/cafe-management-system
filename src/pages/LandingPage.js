@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import AboutUs from "../components/AboutUs";
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
-import Menu from "./Menu";
+import GuestMenu from "./GuestMenu";
 import Carousel from "../components/Carousel";
 
 

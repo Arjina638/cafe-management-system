@@ -8,7 +8,7 @@ const menuItems = [
     id: 1,
     name: "Black Tea",
     description: "Classic strong brewed black tea.",
-    price: 80.0,
+    price: 15.0,
     available: true,
     image: "/images/BlackTea.jpeg",
     category: "Tea",
@@ -17,7 +17,7 @@ const menuItems = [
     id: 2,
     name: "Green Tea",
     description: "Light and fresh green tea.",
-    price: 90.0,
+    price: 30.0,
     available: true,
     image: "/images/GreenTea.jpeg",
     category: "Tea",
@@ -26,7 +26,7 @@ const menuItems = [
     id: 3,
     name: "Milk Tea",
     description: "Creamy milk tea — comforting and smooth.",
-    price: 110.0,
+    price: 25.0,
     available: true,
     image: "/images/MilkTea.jpeg",
     category: "Tea",
@@ -35,7 +35,7 @@ const menuItems = [
     id: 4,
     name: "Matka Chiya",
     description: "Spiced tea in local matka.",
-    price: 120.0,
+    price: 90.0,
     available: true,
     image: "/images/MatkaChai.jpeg",
     category: "Tea",
@@ -44,7 +44,7 @@ const menuItems = [
     id: 5,
     name: "Hot Lemon Tea",
     description: "Zesty ginger + lemon — local favourite for colds.",
-    price: 130.0,
+    price: 30.0,
     available: true,
     image: "/images/LemonTea.jpeg",
     category: "Tea",
@@ -64,7 +64,7 @@ const menuItems = [
     id: 7,
     name: "Cappuccino",
     description: "Espresso + steamed milk + thick foam.",
-    price: 200.0,
+    price: 180.0,
     available: true,
     image: "/images/Cappuccino.jpeg",
     category: "Coffee",
@@ -91,7 +91,7 @@ const menuItems = [
     id: 10,
     name: "Mocha Frappuccino",
     description: "Espresso + chocolate + steamed milk.",
-    price: 220.0,
+    price: 250.0,
     available: true,
     image: "/images/MochaFrappuccino.jpeg",
     category: "Coffee",
@@ -102,7 +102,7 @@ const menuItems = [
     id: 11,
     name: "Classic Cola",
     description: "Chilled classic cola soda.",
-    price: 90.0,
+    price: 50.0,
     available: true,
     image: "/images/Coke.jpeg",
     category: "Cold Drinks",
@@ -121,7 +121,7 @@ const menuItems = [
     id: 13,
     name: "Iced Lemon Tea",
     description: "Cold brewed tea with a bright lemon twist.",
-    price: 140.0,
+    price: 100.0,
     available: true,
     image: "/images/IcedLemonTea.jpeg",
     category: "Cold Drinks",
@@ -130,7 +130,7 @@ const menuItems = [
     id: 14,
     name: "Peach Iced Tea",
     description: "Fruity peach-flavored iced tea.",
-    price: 150.0,
+    price: 100.0,
     available: true,
     image: "/images/PeachIcedTea.jpeg",
     category: "Cold Drinks",
@@ -139,7 +139,7 @@ const menuItems = [
     id: 15,
     name: "Iced Mint Tea",
     description: "Herbal iced tea using valley-grown mint.",
-    price: 150.0,
+    price: 110.0,
     available: true,
     image: "/images/IcedMintTea.jpeg",
     category: "Cold Drinks",
@@ -176,7 +176,7 @@ const menuItems = [
     id: 19,
     name: "Mango Shake",
     description: "Seasonal mango shake — creamy hit.",
-    price: 190.0,
+    price: 200.0,
     available: true,
     image: "/images/MangoMilkshake.jpeg",
     category: "Cold Drinks",
@@ -185,7 +185,7 @@ const menuItems = [
     id: 20,
     name: "Mango Smoothie",
     description: "Fruit-forward mango smoothie.",
-    price: 200.0,
+    price: 250.0,
     available: true,
     image: "/images/MangoSmoothie.jpeg",
     category: "Cold Drinks",
@@ -194,7 +194,7 @@ const menuItems = [
     id: 21,
     name: "Mixed Berry Smoothie",
     description: "Blend of seasonal berries.",
-    price: 210.0,
+    price: 280.0,
     available: true,
     image: "/images/BerrySmoothie.jpeg",
     category: "Cold Drinks",
@@ -205,7 +205,7 @@ const menuItems = [
     id: 22,
     name: "Sweet Lassi",
     description: "Creamy, slightly sweet yogurt drink.",
-    price: 130.0,
+    price: 110.0,
     available: true,
     image: "/images/SweetLassi.jpeg",
     category: "Lassi & Refreshers",
@@ -214,7 +214,7 @@ const menuItems = [
     id: 23,
     name: "Mango Lassi",
     description: "Mango and yogurt blended — sweet and creamy.",
-    price: 160.0,
+    price: 150.0,
     available: true,
     image: "/images/MangoLassi.jpeg",
     category: "Lassi & Refreshers",
@@ -224,7 +224,7 @@ const menuItems = [
     id: 24,
     name: "Lemonade",
     description: "Classic fresh lemonade.",
-    price: 110.0,
+    price: 70.0,
     available: true,
     image: "/images/Lemonade.jpeg",
     category: "Lassi & Refreshers",
@@ -234,7 +234,7 @@ const menuItems = [
     id: 25,
     name: "Fruit Punch - Orange Pineapple",
     description: "Citrusy orange & pineapple blend.",
-    price: 160.0,
+    price: 110.0,
     available: true,
     image: "/images/OrangePineappleFP.jpeg",
     category: "Lassi & Refreshers",
@@ -243,7 +243,7 @@ const menuItems = [
     id: 26,
     name: "Fruit Punch - Mango Banana",
     description: "Creamy mango & banana blend.",
-    price: 170.0,
+    price: 110.0,
     available: true,
     image: "/images/MangoBananaFP.jpeg",
     category: "Lassi & Refreshers",
@@ -253,7 +253,7 @@ const menuItems = [
     id: 27,
     name: "Croissant",
     description: "Buttery flaky croissant.",
-    price: 140.0,
+    price: 120.0,
     available: true,
     image: "/images/croissant.jpeg",
     category: "Bakery & Snacks",
@@ -262,7 +262,7 @@ const menuItems = [
     id: 28,
     name: "Donut",
     description: "Classic glazed donut.",
-    price: 120.0,
+    price: 50.0,
     available: true,
     image: "/images/Donut.jpeg",
     category: "Bakery & Snacks",
@@ -271,7 +271,7 @@ const menuItems = [
     id: 29,
     name: "Muffin",
     description: "Soft bakery muffin (various flavors).",
-    price: 130.0,
+    price: 80.0,
     available: true,
     image: "/images/Muffin.jpeg",
     category: "Bakery & Snacks",
@@ -296,7 +296,7 @@ const menuItems = [
   },
 ];
 
-function Menu() {
+function GuestMenu() {
   const categories = [
     "All",
     ...Array.from(new Set(menuItems.map((i) => i.category))),
@@ -309,7 +309,7 @@ function Menu() {
       : menuItems.filter((m) => m.category === activeCategory);
 
   return (
-    <div className="bg-[#f5f0e8] min-h-screen">
+    <div className="bg-[#f5f0e8] min-h-screen flex flex-col">
       <Navbar />
       <div className="shadow-md max-w-7xl mx-auto px-6 py-20">
         <h1 className="text-3xl font-bold text-center mb-6 text-[#4b2e05]">
@@ -334,7 +334,7 @@ function Menu() {
         </div>
 
         {/* Grid */}
-        <div className="grid gap-5 sm:grid-cols-2 mid grid-cols-2 lg:grid-cols-4 mt-10">
+        <div className="grid gap-3 sm:grid-cols-2 mid grid-cols-2 lg:grid-cols-4 mt-10">
           {filtered.map((item) => (
             <div
               key={item.id}
@@ -343,11 +343,11 @@ function Menu() {
               }`}
             >
               {item.image && (
-                <div className="w-32 h-32 flex-shrink-0 bg-[#f9f9f9] rounded-lg overflow-hidden">
+                <div className="w-15 h-48 flex-shrink-0 bg-[#f9f9f9] rounded-lg overflow-hidden">
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
               )}
@@ -372,7 +372,7 @@ function Menu() {
                   <button
                     disabled={!item.available}
                     onClick={() => (window.location.href = "/login")}
-                    className={`px-2 py-2 rounded-lg font-medium transition text-sm ${
+                    className={`px-1 py-1 rounded-lg font-medium transition text-sm ${
                       item.available
                         ? "bg-[#4b2e05] text-white hover:bg-[#6f4518]"
                         : "bg-gray-200 text-gray-500 cursor-not-allowed"
@@ -391,4 +391,4 @@ function Menu() {
   );
 }
 
-export default Menu;
+export default GuestMenu;
