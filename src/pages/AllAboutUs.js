@@ -1,11 +1,10 @@
 import React from "react";
-import AboutUs from "../components/AboutUs"; // make sure the path is correct
 
 function AllAboutUs() {
   return (
     <div className="min-h-screen bg-[#fff8f0]">
       {/* Full About Us content */}
-      <AboutUs
+      <AllAboutUs
         showButton={false} // hide "Learn More" button
         extraContent={
           <div className="px-4 md:px-16 py-8">

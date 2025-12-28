@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-
-export default function Login() {
+export default function Signup() {
   const [form, setForm] = useState({
+    name: "",
     email: "",
     password: "",
   });
@@ -17,27 +17,27 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:3000/api/login", form);
-
-
-      // Save token if backend sends JWT
-      if (res.data.token) localStorage.setItem("token", res.data.token);
-
-      setMsg("Login Successful!");
-
-      // redirect after login
-      window.location.href = "/menu";
+      const res = await axios.post("http://localhost:2004/api/users/signup", form);
+      setMsg("Signup successful! You can login now.");
     } catch (err) {
-      setMsg(err.response?.data?.message || "Invalid credentials");
+      setMsg(err.response?.data?.message || "Signup failed");
     }
   };
 
   return (
     <div className="min-h-screen bg-[#fbf7f2] flex items-center justify-center">
       <div className="bg-white shadow-xl p-8 rounded-xl w-96">
-        <h2 className="text-2xl font-bold text-center mb-6">Welcome Back</h2>
+        <h2 className="text-2xl font-bold text-center mb-6">Create Account</h2>
 
         <form onSubmit={handleSubmit} className="space-y-4">
+          <input
+            name="name"
+            placeholder="Full Name"
+            className="border p-2 w-full rounded"
+            onChange={handleChange}
+            required
+          />
+
           <input
             name="email"
             type="email"
@@ -60,16 +60,16 @@ export default function Login() {
             type="submit"
             className="bg-black text-white w-full py-2 rounded hover:opacity-80"
           >
-            Login
+            Sign Up
           </button>
         </form>
 
         {msg && <p className="text-center mt-4 text-sm">{msg}</p>}
 
         <p className="text-center mt-4 text-sm">
-          Don’t have an account?{" "}
-          <a href="/signup" className="text-blue-600">
-            Create one
+          Already have an account?{" "}
+          <a href="/login" className="text-blue-600">
+            Login
           </a>
         </p>
       </div>
