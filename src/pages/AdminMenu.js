@@ -6,16 +6,19 @@ const AdminMenu = () => {
 
   const token = localStorage.getItem("token");
 
-  useEffect(() => {
-    fetch("http://localhost:5000/api/menu", {
-      headers: {
-        Authorization: `Bearer ${token}`
-      }
-    })
-      .then(res => res.json())
-      .then(data => setMenu(data))
-      .catch(err => console.error(err));
-  }, []);
+ useEffect(() => {
+  if (!token) return;
+
+  fetch("http://localhost:5000/api/menu", {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  })
+    .then((res) => res.json())
+    .then((data) => setMenu(data))
+    .catch((err) => console.error(err));
+}, [token]);
+
 
   const addItem = async () => {
     if (!item.name || !item.price) return alert("Enter name & price");
