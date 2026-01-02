@@ -7,7 +7,7 @@ import Dashboard from "./pages/Customer/Dashboard";
 import GuestMenu from "./pages/GuestMenu";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import AllAboutUs from "./pages/AllAboutUs";
+import AllAboutUs from "./components/pages/AllAboutUs";
 import ProtectedRoute from "./components/ProtectedRoute";
 import AdminMenu from "./pages/AdminMenu";
 import Orders from "./pages/Customer/Orders";
@@ -49,7 +49,7 @@ function App() {
   );
 }
 
-// // export default App;
+export default App;
 
 // export default function App() {
 //   return <h1>Frontend is working</h1>;

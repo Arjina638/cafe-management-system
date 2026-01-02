@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import AboutUs from "../pages/AllAboutUs";
-import Footer from "../components/Footer";
+import Navbar from "../components/layout/Navbar";
+import AboutUs from "../components/pages/AllAboutUs";
+import Footer from "../components/layout/Footer";
 import HeroSection from "../components/HeroSection";
 // import Carousel from "../components/Carousel";
 // import FeaturesSection from "../components/FeaturesSection";
