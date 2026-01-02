@@ -1,19 +1,21 @@
 import { useState } from "react";
-import { Navigation } from "../src/components/layout/Navbar";
-import { Landing } from "../src/components/pages/LandingPage";
-import { About } from "../src/components/pages/AllAboutUs";
-import { Services } from "../src/components/services/cafeServices";
-import { Auth } from "./components/pages/Auth";
-import {Reservation} from "../src/components/Reservation/reservation-form"
-import { UserDashboard } from "../src/components/pages/user/user-dashboard";
+import  Navigation  from "../src/components/layout/Navbar";
+import  Landing  from "../src/components/pages/LandingPage";
+import  About from "../src/components/pages/AllAboutUs";
+import  Services from "../src/components/services/cafeServices";
+import  Auth from "./components/pages/Auth";
+import Reservation from "../src/components/Reservation/reservation-form"
+import  UserDashboard  from "../src/components/pages/user/user-dashboard";
 import AdminDashboard from "../src/components/pages/admin/admin-dashboard";
-import { AuthProvider } from "../src/context/AuthContex";
-import { Toaster } from "react-hot-toast";
+import  AuthProvider  from "../src/context/AuthContext";
+import  Toaster  from "react-hot-toast";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("home");
 
   const renderPage = () => {
+      return <div style={{background:'yellow', minHeight:'100vh'}}>Landing Page Works!</div>
+
     switch (currentPage) {
       case "home":
         return <Landing />;

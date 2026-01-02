@@ -1,8 +1,10 @@
 import React from "react";
-import Navbar from "../components/layout/Navbar";
-import AboutUs from "../components/pages/AllAboutUs";
-import Footer from "../components/layout/Footer";
-import HeroSection from "../components/HeroSection";
+import Navbar from "../layout/Navbar";
+import AboutUs from "./AllAboutUs";
+import Footer from "../layout/Footer";
+import Sidebar from "../layout/Sidebar";
+import HeroSection from"../HeroSection";
+// import HeroSection from "../components/HeroSection";
 // import Carousel from "../components/Carousel";
 // import FeaturesSection from "../components/FeaturesSection";
 // import StatsSection from "../components/StatsSection";
@@ -13,12 +15,13 @@ import HeroSection from "../components/HeroSection";
 function LandingPage (){
   return(
     <div className="bg-[#f5f0e8] min-h-screen">
-    <Navbar/>
-    <HeroSection/>
-    {/* <Carousel/>
+     <Navbar/>
+    <Sidebar/>
+    <HeroSection/> */}
+     {/* <Carousel/>
     <StatsSection/>
     <FeaturesSection/>
-    <TestimonialsSection/> */}
+    <TestimonialsSection/>  */}
     <AboutUs showButton = {true} />
     <Footer/>
     </div>
